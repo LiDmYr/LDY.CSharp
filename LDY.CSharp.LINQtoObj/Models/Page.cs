@@ -4,8 +4,13 @@ using System.Text;
 
 namespace LDY.CSharp.LINQ.Models {
     public class Page {
-        public int id { get; }
+        public string Id { get; }
 
         public List<Language> Languages { get; }
+
+        public Page(List<Language> languages, string id) {
+            Id = id;
+            Languages = languages;
+        }
     }
 }

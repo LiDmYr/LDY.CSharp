@@ -5,6 +5,8 @@ namespace LDY.CSharp.LINQ {
     internal class Program {
         static void Main(string[] args) {
             var extensions = new Extensions(new Data());
+
+            extensions.Select();
         }
     }
 }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28407.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDY.CSharp.LINQ", "LDY.CSharp.LINQ\LDY.CSharp.LINQ.csproj", "{E787986F-D54D-4EAE-81C4-01D54D39689F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LDY.CSharp.LINQtoObj", "LDY.CSharp.LINQtoObj\LDY.CSharp.LINQtoObj.csproj", "{E787986F-D54D-4EAE-81C4-01D54D39689F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LINQ", "LINQ", "{2D7232C2-86EC-400A-842B-5A8A0DA1D229}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E787986F-D54D-4EAE-81C4-01D54D39689F} = {2D7232C2-86EC-400A-842B-5A8A0DA1D229}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB7A7984-1DA4-407D-A7BC-42CAF22F8048}

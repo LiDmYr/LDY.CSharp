@@ -1,6 +1,8 @@
 ﻿using LDY.CSharp.LINQ.DataProvider;
+using LDY.CSharp.LINQ.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace LDY.CSharp.LINQ {
@@ -11,10 +13,14 @@ namespace LDY.CSharp.LINQ {
             Data = data;
         }
 
-        //Select: ...
+        /// <summary>
+        /// https://docs.microsoft.com/en-gb/dotnet/api/system.linq.enumerable.select?view=netcore-2.2
+        /// Select: Projects each element of a sequence into a new form.
+        /// </summary>
         public void Select() {
+            WebSite webSite = Data.GetWebSite();
             // lambda
-
+            bool[] arePagesHaveOneLanguage = webSite.Pages.Select(page => page.Languages.Count == 1).ToArray();
             // full 
 
         }
@@ -78,6 +84,10 @@ namespace LDY.CSharp.LINQ {
         //First: ...
 
         //FirstOrDefault: ...
+
+        public void FirstOrDefault() {
+
+        }
 
         //Single: ...
 
